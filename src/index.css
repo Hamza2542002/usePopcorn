@@ -38,6 +38,7 @@ body {
 nav.navbar {
   padding: 10px 30px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: var(--color-primary);
@@ -66,6 +67,10 @@ p.logo {
   font-weight: 600;
 }
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .navbar span {
   font-size: 18px;
   padding: 10px;
@@ -76,6 +81,7 @@ p.logo {
 .main {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   min-height: calc(100vh - 145px);
@@ -215,6 +221,7 @@ ul li span.year {
   border-top-right-radius: inherit;
   position: relative;
   background-color: inherit;
+  padding-bottom: 35px;
 }
 .movie-info .card img {
   width: 30%;
@@ -263,7 +270,7 @@ ul li span.year {
 }
 
 .movie-info section .add-movie {
-  width: calc(100% - 100px);
+  width: calc(280px + 30px);
   background-color: var(--color-background-100);
   border-radius: 10px;
   padding: 20px;
